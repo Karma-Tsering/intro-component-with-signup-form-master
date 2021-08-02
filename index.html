@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- link for google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- stylesheet link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container1">
+  <h3>Learn to code by watching others</h3>
+
+  <p class="detail">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+  but understanding how developers think is invaluable.</p> 
+</div>
+
+ <div class="container2">
+    <div class="free-trial">Try it free 7 days 
+    <span>then $20/mo. thereafter</span> </div>
+    <form method="GET" name="trial-form" action="./detail.html">
+    <div class="input-field fname">
+      <input type="text" class="fname" name="fname" placeholder="First Name">
+      <img src="./images/icon-error.svg" alt="error" id="fname-icon-error">
+      <img src="./images/icon-check.svg" alt="correct" class="icon-correct" id="fname-icon-correct">
+      <span class="error" id="fname-error"></span>
+    </div>
+    <div class="input-field lname">
+      <input type="text" class="lname" name="lname" placeholder="Last Name">
+      <img src="./images/icon-error.svg" alt="error" id="lname-icon-error">
+      <img src="./images/icon-check.svg" alt="correct" class="icon-correct" id="lname-icon-correct">
+      <span class="error" id="lname-error"></span>
+    </div>
+    <div class="input-field email">
+      <input type="email" class="email" name="email" placeholder="Email Address">
+      <img src="./images/icon-error.svg" alt="error" id="email-icon-error">
+      <img src="./images/icon-check.svg" alt="correct" class="icon-correct" id="email-icon-correct">
+      <span class="error" id="email-error"></span>
+    </div>
+    <div class="input-field password">
+      <input type="password" class="password" name="password" placeholder="Password">
+      <img src="./images/icon-error.svg" alt="error" id="password-icon-error">
+      <img src="./images/icon-check.svg" alt="correct" class="icon-correct" id="password-icon-correct">
+      <span class="error" id="password-error"></span>
+    </div>
+    <div class="input-field submit">
+    <!-- [type = "submit"] will submit the form where as [type = "button"] will provide more room for customization and validation from our end-->
+      <input type="submit"  id="submit" value="Claim your free trial" onclick="return formValidation()">
+    </div>  
+    <div class="agree">
+      <p class="agreement"><input type="checkbox" name="checkbox" id="">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
+    </div>
+    <span class="checkbox-error">*check the box to agree</span>
+    </form>
+ </div>
+
+</body>
+<script src="./app.js"></script>
+</html>

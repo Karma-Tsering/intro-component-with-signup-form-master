@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Details</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background: url(./images/bg-intro-desktop.png) center hotpink;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .details{
+        background-color:hsl(248, 32%, 49%);
+        padding: 1rem;
+        box-shadow: inset -3px 3px 20px rgb(0 0 0 / 70%), -2px 2px 12px rgb(0 0 0);
+    }
+    h3{
+        text-align: center;
+        color: #fff;
+    }
+    ul{
+        list-style-image: url(./images/icon-check.svg);
+        padding: 1rem;
+        list-style-position:outside;
+    }
+    li{
+        margin-top: .5rem;
+        color: hsl(246, 25%, 77%);
+        font-family:monospace;
+        font-weight: 600;
+    }
+    button{
+        margin-top: 2rem;
+        border: none;
+        outline: none;
+        background-color: bisque;
+        padding: .3rem .5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    button:hover{
+        color: rgb(83, 148, 83);
+    }
+</style>
+<body>
+    <div class="details">
+        <h3>Your Details</h3>
+        <ul>
+
+        </ul>
+    </div>
+    <button onclick="goBack()">Back</button>
+</body>
+<script>
+   const list = document.querySelector("ul")
+   new URLSearchParams(window.location.search).forEach((value,name)=>{
+       let inputName = name.toUpperCase()
+       let li = document.createElement("li")
+       let liTextNode = `${inputName} : ${value}`
+       li.append(liTextNode)
+       list.appendChild(li)
+   })
+  // function to return back to form interface
+  function goBack(){
+      window.history.back()
+  }
+</script>
+</html>
