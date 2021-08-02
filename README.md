@@ -1,10 +1,13 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-For live preview [click here](livelsit)
+For live preview [click here](https://kar-cee.github.io/intro-component-with-signup-form-master/)
 
 ### Screenshot
 
+## Desktop
 ![Desktop Preview](./images/desktop.png)
+
+## Mobile
 ![Moblie Preview](./images/mobile.png)
 
 ### Built with
