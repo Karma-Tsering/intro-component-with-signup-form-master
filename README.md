@@ -2,12 +2,12 @@
 
 For live preview [click here](https://kar-cee.github.io/intro-component-with-signup-form-master/)
 
-### Screenshot
+# Screenshot
 
-## Desktop
+### Desktop
 ![Desktop Preview](./images/desktop.png)
 
-## Mobile
+### Mobile
 ![Moblie Preview](./images/mobile.png)
 
 ### Built with
